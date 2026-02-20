@@ -14,7 +14,7 @@
 > **Jalankan sebagai root di VPS / server Pterodactyl kamu:**
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/WildanDeveloper/PROTECT-PANEL-SENTINELX/main/install.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/WildanDeveloper/PROTECT-PANEL-SENTINELX/main/sentinex/install.sh)
 ```
 
 Script ini akan otomatis:
@@ -35,7 +35,7 @@ apt install -y build-essential libcurl4-openssl-dev libssl-dev git
 
 # 2. Clone repo
 git clone https://github.com/WildanDeveloper/PROTECT-PANEL-SENTINELX.git
-cd PROTECT-PANEL-SENTINELX
+cd PROTECT-PANEL-SENTINELX/sentinex
 
 # 3. Build
 make -j$(nproc)
@@ -253,7 +253,7 @@ tail -f /var/log/sentinelx.log
 ## 🔄 Update
 
 ```bash
-cd PROTECT-PANEL-SENTINELX
+cd PROTECT-PANEL-SENTINELX/sentinex
 git pull
 make -j$(nproc)
 sudo make install
@@ -264,7 +264,7 @@ sudo make install
 ## 🗑️ Uninstall
 
 ```bash
-cd PROTECT-PANEL-SENTINELX
+cd PROTECT-PANEL-SENTINELX/sentinex
 sudo make uninstall
 ```
 
